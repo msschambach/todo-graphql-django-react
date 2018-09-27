@@ -1,0 +1,10 @@
+{% extends 'todo/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div id="root"></div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'dist/todo.bundle.js' %}"></script>
+{% endblock %}
