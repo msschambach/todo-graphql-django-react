@@ -118,5 +118,5 @@ STATIC_URL = "/static/"
 DEFAULT_STATIC_ROOT = os.path.abspath(os.path.join(PROJECT_DIR, "static"))
 STATIC_ROOT = os.environ.get("STATIC_ROOT", DEFAULT_STATIC_ROOT)
 
-STATICFILES_DIRS = ()
+STATICFILES_DIRS = [os.path.join(PROJECT_DIR, "applications/todo/dist")]
 STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"

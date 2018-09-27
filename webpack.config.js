@@ -4,11 +4,11 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const WebpackConfig = {
     entry: {
-        'todo': './applications/todo/static/js/todoapp/index.js'
+        'todo': './applications/todo/js/todoapp/index.js'
     },
 
     output: {
-        path: path.resolve('./applications/todo/static/dist'),
+        path: path.resolve('./applications/todo/dist'),
         filename: '[name].bundle.js'
     },
 
