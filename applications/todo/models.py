@@ -20,7 +20,7 @@ class Task(models.Model):
 
     name = models.CharField(null=False, max_length=255)
     description = models.TextField(null=True, max_length=1000)
-    due_datetime = models.DateTimeField()
+    due_datetime = models.DateTimeField(null=True)
     status = models.CharField(
         max_length=5, choices=[(choice, choice.value) for choice in TaskStatus]
     )
