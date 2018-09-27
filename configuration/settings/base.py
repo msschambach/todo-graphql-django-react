@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "graphene_django",
     "applications.todo",
 ]
 
@@ -120,3 +121,7 @@ STATIC_ROOT = os.environ.get("STATIC_ROOT", DEFAULT_STATIC_ROOT)
 
 STATICFILES_DIRS = [os.path.join(PROJECT_DIR, "applications/todo/dist")]
 STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
+
+
+GRAPHENE = {"SCHEMA": "applications.todo.api.schema"}
+
